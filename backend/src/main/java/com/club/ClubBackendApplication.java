@@ -1,4 +1,3 @@
-
 package com.club;
 
 import org.springframework.boot.SpringApplication;
