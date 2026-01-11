@@ -13,6 +13,7 @@ C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\repository\Jo
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\security\SecurityConfig.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\model\User.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\service\EntrainementService.java
+C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\config\DataInitializer.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\controller\EncadrantController.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\service\CotisationService.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\service\JoueurService.java
@@ -23,4 +24,5 @@ C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\security\JwtR
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\repository\UserRepository.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\model\Joueur.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\service\UserService.java
+C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\util\PasswordHashGenerator.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\model\Cotisation.java

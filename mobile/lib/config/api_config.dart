@@ -1,9 +1,9 @@
 class ApiConfig {
   // IMPORTANT: Changer cette URL selon votre configuration
-  // Pour Android Emulator: 'http://10.0.2.2:8080/api'
-  // Pour iOS Simulator: 'http://localhost:8080/api'
-  // Pour appareil physique: 'http://VOTRE_IP:8080/api'
-  static const String baseUrl = 'http://10.0.2.2:8082/api';
+  // Pour Android Emulator: 'http://10.0.2.2:8082/api'
+  // Pour iOS Simulator: 'http://localhost:8082/api'
+  // Pour appareil physique: 'http://VOTRE_IP:8082/api'
+  static const String baseUrl = 'http://192.168.1.109:8082/api';
   
   // Auth endpoints
   static const String login = '$baseUrl/auth/login';

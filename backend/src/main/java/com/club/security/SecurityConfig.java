@@ -65,7 +65,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(
             HttpSecurity http,
-            JwtRequestFilter jwtRequestFilter
+            JwtRequestFilter jwtRequestFilter,
+            UserDetailsService userDetailsService,
+            PasswordEncoder passwordEncoder
     ) throws Exception {
 
         http
@@ -75,7 +77,7 @@ public class SecurityConfig {
                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             )
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers("/auth/**").permitAll()
                 .requestMatchers("/admin/**").hasRole("ADMIN")
                 .requestMatchers("/encadrant/**").hasAnyRole("ADMIN", "ENCADRANT")
                 .requestMatchers("/adherent/**")
@@ -83,7 +85,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated()
             )
             .authenticationProvider(authenticationProvider(
-                    null, null
+                    userDetailsService, passwordEncoder
             ))
             .addFilterBefore(
                     jwtRequestFilter,
