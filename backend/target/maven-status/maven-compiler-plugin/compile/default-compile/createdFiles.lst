@@ -17,7 +17,6 @@ com\club\ClubBackendApplication.class
 com\club\model\Cotisation.class
 com\club\model\Cotisation$ModePaiement.class
 com\club\service\CotisationService.class
-com\club\config\DataInitializer.class
 com\club\security\SecurityConfig.class
 com\club\security\JwtUtil.class
 com\club\controller\AdminController.class

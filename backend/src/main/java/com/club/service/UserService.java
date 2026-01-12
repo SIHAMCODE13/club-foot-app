@@ -106,6 +106,21 @@ public class UserService implements UserDetailsService {
         userRepository.save(user);
     }
 
+        public void migratePasswordIfNeeded(String email, String rawPassword) {
+                User user = userRepository.findByEmail(email)
+                                .orElseThrow(() -> new RuntimeException("Utilisateur non trouvé"));
+
+                String stored = user.getPassword();
+                if (stored == null) return;
+
+                boolean looksLikeBcrypt = stored.startsWith("$2a$") || stored.startsWith("$2b$") || stored.startsWith("$2y$");
+
+                if (!looksLikeBcrypt && passwordEncoder.matches(rawPassword, stored)) {
+                        user.setPassword(passwordEncoder.encode(rawPassword));
+                        userRepository.save(user);
+                }
+        }
+
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }

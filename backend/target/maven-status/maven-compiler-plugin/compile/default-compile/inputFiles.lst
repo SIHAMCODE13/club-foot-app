@@ -6,6 +6,7 @@ C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\model\Equipe.
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\model\Entrainement.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\controller\AdherentController.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\repository\MatchRepository.java
+C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\security\MultiPasswordEncoder.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\ClubBackendApplication.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\controller\AdminController.java
 C:\Users\hp\Downloads\club-foot-app\backend\src\main\java\com\club\model\Match.java

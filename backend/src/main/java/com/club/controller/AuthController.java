@@ -66,6 +66,7 @@ public class AuthController {
             String token = jwtUtil.generateToken(userDetails);
             
             userService.updateLastLogin(email);
+            userService.migratePasswordIfNeeded(email, password);
             
             User user = (User) userDetails;
             
