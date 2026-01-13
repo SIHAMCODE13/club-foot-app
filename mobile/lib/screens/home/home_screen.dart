@@ -125,37 +125,49 @@ class _HomeScreenState extends State<HomeScreen> {
           title: 'Utilisateurs',
           icon: Icons.people,
           color: Colors.blue,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/users');
+          },
         ),
         ActionCard(
           title: 'Équipes',
           icon: Icons.groups,
           color: Colors.green,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/equipes');
+          },
         ),
         ActionCard(
           title: 'Joueurs',
           icon: Icons.sports_soccer,
           color: Colors.orange,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/joueurs');
+          },
         ),
         ActionCard(
           title: 'Entraînements',
           icon: Icons.fitness_center,
           color: Colors.purple,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/entrainements');
+          },
         ),
         ActionCard(
           title: 'Matchs',
           icon: Icons.stadium,
           color: Colors.red,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/matchs');
+          },
         ),
         ActionCard(
           title: 'Cotisations',
           icon: Icons.payment,
           color: Colors.teal,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/cotisations');
+          },
         ),
       ];
     } else if (role == 'ENCADRANT') {
@@ -164,25 +176,33 @@ class _HomeScreenState extends State<HomeScreen> {
           title: 'Mes Équipes',
           icon: Icons.groups,
           color: Colors.green,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/equipes');
+          },
         ),
         ActionCard(
           title: 'Joueurs',
           icon: Icons.sports_soccer,
           color: Colors.orange,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/joueurs');
+          },
         ),
         ActionCard(
           title: 'Entraînements',
           icon: Icons.fitness_center,
           color: Colors.purple,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/entrainements');
+          },
         ),
         ActionCard(
           title: 'Matchs',
           icon: Icons.stadium,
           color: Colors.red,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/matchs');
+          },
         ),
       ];
     } else {
@@ -191,25 +211,33 @@ class _HomeScreenState extends State<HomeScreen> {
           title: 'Équipes',
           icon: Icons.groups,
           color: Colors.green,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/equipes');
+          },
         ),
         ActionCard(
           title: 'Calendrier',
           icon: Icons.calendar_today,
           color: Colors.blue,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/calendar');
+          },
         ),
         ActionCard(
           title: 'Mes Cotisations',
           icon: Icons.payment,
           color: Colors.teal,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/cotisations');
+          },
         ),
         ActionCard(
           title: 'Mon Profil',
           icon: Icons.person,
           color: Colors.purple,
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/profile');
+          },
         ),
       ];
     }

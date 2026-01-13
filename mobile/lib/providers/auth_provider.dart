@@ -84,4 +84,24 @@ class AuthProvider extends ChangeNotifier {
       }
     }
   }
+
+  // Update local user fields (used by Profile screen for local edits)
+  void updateLocalUser({String? nom, String? prenom, String? email}) {
+    if (_user == null) return;
+    _user = User(
+      id: _user!.id,
+      email: email ?? _user!.email,
+      nom: nom ?? _user!.nom,
+      prenom: prenom ?? _user!.prenom,
+      telephone: _user!.telephone,
+      adresse: _user!.adresse,
+      dateNaissance: _user!.dateNaissance,
+      photo: _user!.photo,
+      role: _user!.role,
+      actif: _user!.actif,
+      dateInscription: _user!.dateInscription,
+      derniereConnexion: _user!.derniereConnexion,
+    );
+    notifyListeners();
+  }
 }
