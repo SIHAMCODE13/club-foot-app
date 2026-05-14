@@ -7,22 +7,20 @@ enum DocumentType {
   FEDERAL_LICENSE,
   REGISTRATION_FORM,
   PARENTAL_AUTHORIZATION,
+  PROOF_OF_ADDRESS,
 
   // ENCADRANT (Coach/Staff) documents
   CIN,
   SPORT_DIPLOMA,
+  CV,
+  CRIMINAL_RECORD,
   CONTRACT,
+  FEDERAL_LICENSE_COACH,
 
   // ADHÉRENT (Member) documents
-  ANTHROPOMETRIC_FORM,
-  PAYMENT_PROOF,
-
-  // Shared documents (used by multiple roles)
-  CRIMINAL_RECORD,
-  CV,
-  FEDERAL_LICENSE_COACH,
   MEMBERSHIP_FORM,
-  PROOF_OF_ADDRESS
+  ANTHROPOMETRIC_FORM,
+  PAYMENT_PROOF
 }
 
 enum DocumentStatus {

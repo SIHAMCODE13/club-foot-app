@@ -9,20 +9,18 @@ public enum TypeDocument {
     FEDERAL_LICENSE,             // Licence fédérale FRMF
     REGISTRATION_FORM,           // Fiche d'inscription club
     PARENTAL_AUTHORIZATION,      // Autorisation parentale (si mineur)
+    PROOF_OF_ADDRESS,            // Justificatif de domicile
     
     // ENCADRANT (Coach/Staff) documents
     CIN,                         // CIN
     SPORT_DIPLOMA,               // Diplôme sportif CAF/UEFA/FRMF
+    CV,                          // CV sportif
+    CRIMINAL_RECORD,             // Casier judiciaire vierge
     CONTRACT,                    // Contrat ou convention avec le club
+    FEDERAL_LICENSE_COACH,       // Licence fédérale encadrant FRMF
     
     // ADHÉRENT (Member) documents
-    ANTHROPOMETRIC_FORM,         // Fiche anthropométrique
-    PAYMENT_PROOF,               // Justificatif de paiement cotisation
-    
-    // Shared documents (used by multiple roles)
-    CRIMINAL_RECORD,             // Casier judiciaire vierge
-    CV,                          // CV sportif
-    FEDERAL_LICENSE_COACH,       // Licence fédérale encadrant FRMF
     MEMBERSHIP_FORM,             // Fiche d'adhésion
-    PROOF_OF_ADDRESS             // Justificatif de domicile
+    ANTHROPOMETRIC_FORM,         // Fiche anthropométrique
+    PAYMENT_PROOF                // Justificatif de paiement cotisation
 }

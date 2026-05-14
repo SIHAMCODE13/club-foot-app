@@ -66,9 +66,6 @@ class _AddUserScreenState extends State<AddUserScreen> {
       _documentFiles[DocumentType.IDENTITY_PHOTO] = null;
       _documentBytes[DocumentType.IDENTITY_PHOTO] = null;
       _documentFileNames[DocumentType.IDENTITY_PHOTO] = null;
-      _documentFiles[DocumentType.PASSPORT_PHOTO] = null;
-      _documentBytes[DocumentType.PASSPORT_PHOTO] = null;
-      _documentFileNames[DocumentType.PASSPORT_PHOTO] = null;
       _documentFiles[DocumentType.MEDICAL_CERTIFICATE] = null;
       _documentBytes[DocumentType.MEDICAL_CERTIFICATE] = null;
       _documentFileNames[DocumentType.MEDICAL_CERTIFICATE] = null;
@@ -78,6 +75,9 @@ class _AddUserScreenState extends State<AddUserScreen> {
       _documentFiles[DocumentType.REGISTRATION_FORM] = null;
       _documentBytes[DocumentType.REGISTRATION_FORM] = null;
       _documentFileNames[DocumentType.REGISTRATION_FORM] = null;
+      _documentFiles[DocumentType.PROOF_OF_ADDRESS] = null;
+      _documentBytes[DocumentType.PROOF_OF_ADDRESS] = null;
+      _documentFileNames[DocumentType.PROOF_OF_ADDRESS] = null;
       // Check if minor (add parental authorization)
       if (_dateOfBirth != null && _isMinor(_dateOfBirth!)) {
         _documentFiles[DocumentType.PARENTAL_AUTHORIZATION] = null;
@@ -94,9 +94,18 @@ class _AddUserScreenState extends State<AddUserScreen> {
       _documentFiles[DocumentType.SPORT_DIPLOMA] = null;
       _documentBytes[DocumentType.SPORT_DIPLOMA] = null;
       _documentFileNames[DocumentType.SPORT_DIPLOMA] = null;
+      _documentFiles[DocumentType.CV] = null;
+      _documentBytes[DocumentType.CV] = null;
+      _documentFileNames[DocumentType.CV] = null;
+      _documentFiles[DocumentType.CRIMINAL_RECORD] = null;
+      _documentBytes[DocumentType.CRIMINAL_RECORD] = null;
+      _documentFileNames[DocumentType.CRIMINAL_RECORD] = null;
       _documentFiles[DocumentType.CONTRACT] = null;
       _documentBytes[DocumentType.CONTRACT] = null;
       _documentFileNames[DocumentType.CONTRACT] = null;
+      _documentFiles[DocumentType.FEDERAL_LICENSE_COACH] = null;
+      _documentBytes[DocumentType.FEDERAL_LICENSE_COACH] = null;
+      _documentFileNames[DocumentType.FEDERAL_LICENSE_COACH] = null;
     } else if (role == UserRole.ADHERENT) {
       _documentFiles[DocumentType.CIN_OR_BIRTH_CERTIFICATE] = null;
       _documentBytes[DocumentType.CIN_OR_BIRTH_CERTIFICATE] = null;
@@ -104,9 +113,9 @@ class _AddUserScreenState extends State<AddUserScreen> {
       _documentFiles[DocumentType.IDENTITY_PHOTO] = null;
       _documentBytes[DocumentType.IDENTITY_PHOTO] = null;
       _documentFileNames[DocumentType.IDENTITY_PHOTO] = null;
-      _documentFiles[DocumentType.ANTHROPOMETRIC_FORM] = null;
-      _documentBytes[DocumentType.ANTHROPOMETRIC_FORM] = null;
-      _documentFileNames[DocumentType.ANTHROPOMETRIC_FORM] = null;
+      _documentFiles[DocumentType.MEMBERSHIP_FORM] = null;
+      _documentBytes[DocumentType.MEMBERSHIP_FORM] = null;
+      _documentFileNames[DocumentType.MEMBERSHIP_FORM] = null;
       _documentFiles[DocumentType.PAYMENT_PROOF] = null;
       _documentBytes[DocumentType.PAYMENT_PROOF] = null;
       _documentFileNames[DocumentType.PAYMENT_PROOF] = null;
@@ -326,37 +335,37 @@ class _AddUserScreenState extends State<AddUserScreen> {
       case DocumentType.CIN_OR_BIRTH_CERTIFICATE:
         return 'CIN ou Acte de Naissance';
       case DocumentType.IDENTITY_PHOTO:
-        return 'Photo d\'identité';
+        return "Photo d'identité";
       case DocumentType.PASSPORT_PHOTO:
-        return 'Photo de passeport';
+        return "Photo de passeport";
       case DocumentType.MEDICAL_CERTIFICATE:
         return 'Certificat Médical';
       case DocumentType.FEDERAL_LICENSE:
         return 'Licence Fédérale';
       case DocumentType.REGISTRATION_FORM:
-        return 'Formulaire d\'Inscription';
+        return "Formulaire d'Inscription";
       case DocumentType.PARENTAL_AUTHORIZATION:
         return 'Autorisation Parentale';
+      case DocumentType.PROOF_OF_ADDRESS:
+        return 'Justificatif de Domicile';
       case DocumentType.CIN:
         return 'CIN';
       case DocumentType.SPORT_DIPLOMA:
         return 'Diplôme Sportif';
-      case DocumentType.CONTRACT:
-        return 'Contrat';
-      case DocumentType.ANTHROPOMETRIC_FORM:
-        return 'Fiche anthropométrique';
-      case DocumentType.PAYMENT_PROOF:
-        return 'Preuve de Paiement';
-      case DocumentType.CRIMINAL_RECORD:
-        return 'Casier Judiciaire';
       case DocumentType.CV:
         return 'CV';
+      case DocumentType.CRIMINAL_RECORD:
+        return 'Casier Judiciaire';
+      case DocumentType.CONTRACT:
+        return 'Contrat';
       case DocumentType.FEDERAL_LICENSE_COACH:
         return 'Licence Fédérale Encadrant';
       case DocumentType.MEMBERSHIP_FORM:
-        return 'Formulaire d\'Adhésion';
-      case DocumentType.PROOF_OF_ADDRESS:
-        return 'Justificatif de Domicile';
+        return "Formulaire d'Adhésion";
+      case DocumentType.ANTHROPOMETRIC_FORM:
+        return "Fiche anthropométrique";
+      case DocumentType.PAYMENT_PROOF:
+        return 'Preuve de Paiement';
     }
     return docType.toString().split('.').last;
   }
