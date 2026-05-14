@@ -1,0 +1,119 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.club:clubbackend >------------------------
+[INFO] Building clubbackend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ clubbackend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ clubbackend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 42 source files with javac [debug release 17] to target\classes
+[INFO] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/security/MultiPasswordEncoder.java: C:\xampp\htdocs\club-foot-app-main1\club-foot-app-main\backend\src\main\java\com\club\security\MultiPasswordEncoder.java uses or overrides a deprecated API.
+[INFO] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/security/MultiPasswordEncoder.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/TauxPresenceDTO.java:[8,2] cannot find symbol
+  symbol: class Builder
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[38,12] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[39,12] cannot find symbol
+  symbol:   method setNom(java.lang.String)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[40,12] cannot find symbol
+  symbol:   method setType(java.lang.String)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[41,12] cannot find symbol
+  symbol:   method setUrl(java.lang.String)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[42,12] cannot find symbol
+  symbol:   method setDateExpiration(java.time.LocalDate)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[43,12] cannot find symbol
+  symbol:   method setValide(boolean)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[44,12] cannot find symbol
+  symbol:   method setUserId(java.lang.Long)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[45,12] cannot find symbol
+  symbol:   method setUserNom(java.lang.String)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[46,12] cannot find symbol
+  symbol:   method setUserPrenom(java.lang.String)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[47,12] cannot find symbol
+  symbol:   method setUploadDate(java.time.LocalDateTime)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[48,12] cannot find symbol
+  symbol:   method setUploadedBy(java.lang.String)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[49,12] cannot find symbol
+  symbol:   method setJoursRestants(long)
+  location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/service/DashboardService.java:[39,16] constructor DashboardStatsDTO in class com.club.dto.DashboardStatsDTO cannot be applied to given types;
+  required: no arguments
+  found:    long,long,long,java.lang.Double
+  reason: actual and formal argument lists differ in length
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.993 s
+[INFO] Finished at: 2026-01-16T14:05:00+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project clubbackend: Compilation failure: Compilation failure: 
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/TauxPresenceDTO.java:[8,2] cannot find symbol
+[ERROR]   symbol: class Builder
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[38,12] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[39,12] cannot find symbol
+[ERROR]   symbol:   method setNom(java.lang.String)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[40,12] cannot find symbol
+[ERROR]   symbol:   method setType(java.lang.String)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[41,12] cannot find symbol
+[ERROR]   symbol:   method setUrl(java.lang.String)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[42,12] cannot find symbol
+[ERROR]   symbol:   method setDateExpiration(java.time.LocalDate)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[43,12] cannot find symbol
+[ERROR]   symbol:   method setValide(boolean)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[44,12] cannot find symbol
+[ERROR]   symbol:   method setUserId(java.lang.Long)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[45,12] cannot find symbol
+[ERROR]   symbol:   method setUserNom(java.lang.String)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[46,12] cannot find symbol
+[ERROR]   symbol:   method setUserPrenom(java.lang.String)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[47,12] cannot find symbol
+[ERROR]   symbol:   method setUploadDate(java.time.LocalDateTime)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[48,12] cannot find symbol
+[ERROR]   symbol:   method setUploadedBy(java.lang.String)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/dto/DocumentDTO.java:[49,12] cannot find symbol
+[ERROR]   symbol:   method setJoursRestants(long)
+[ERROR]   location: variable dto of type com.club.dto.DocumentDTO
+[ERROR] /C:/xampp/htdocs/club-foot-app-main1/club-foot-app-main/backend/src/main/java/com/club/service/DashboardService.java:[39,16] constructor DashboardStatsDTO in class com.club.dto.DashboardStatsDTO cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    long,long,long,java.lang.Double
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
